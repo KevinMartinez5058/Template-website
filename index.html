@@ -10,27 +10,35 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>bootstrap</title>
   </head>
   <body>
     <header>
-      <nav class="navbar fixed-top navbar-fixed-top">
-        <div class="logo-img">
-          <a href="#"
-            ><img class="logo" src="https://placehold.co/50x50" alt="logo"
-          /></a>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggler"
+            aria-controls="navbarToggler"
+            aria-expanded="true"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="logo ms-5" href="index.html">Logo</a>
+          <div class="collapse navbar-collapse ms-5" id="navbarToggler">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="#">about</a></li>
+              <li class="nav-item"><a href="#">services</a></li>
+              <li class="nav-item"><a href="#">gallery</a></li>
+              <li class="nav-item"><a href="#">contact us</a></li>
+            </ul>
+          </div>
         </div>
-        <ul class="mb-lg-0">
-          <li><a href="#">about</a></li>
-          <li><a href="#">services</a></li>
-          <li><a href="#">gallery</a></li>
-          <li><a href="#">contact us</a></li>
-        </ul>
       </nav>
     </header>
-    <!-- <div class="pop-up hidden">
-      <h1></h1>
-    </div> -->
     <section class="hero">
       <div class="container">
         <div class="row">
@@ -42,10 +50,10 @@
             </p>
             <a class="hero-btn text-center" href="#">Lorem</a>
           </div>
-          <div class="col">
+          <div class="col mobile">
             <img
               src="https://placehold.co/600x400"
-              class="hero-img"
+              class="img-fluid hero-img"
               alt="hero image"
             />
           </div>
@@ -55,8 +63,12 @@
     <section class="section-a">
       <div class="container mt-5">
         <div class="row">
-          <div class="col">
-            <img src="https://placehold.co/600x400" alt="placeholder" />
+          <div class="col mobile">
+            <img
+              class="img-fluid"
+              src="https://placehold.co/600x400"
+              alt="placeholder"
+            />
           </div>
           <div class="col section-text">
             <p class="lead">
@@ -78,8 +90,12 @@
               exercitationem placeat ipsam vero.
             </p>
           </div>
-          <div class="col-5">
-            <img src="https://placehold.co/400x400" alt="placeholder" />
+          <div class="col-5 mobile">
+            <img
+              class="img-fluid"
+              src="https://placehold.co/400x400"
+              alt="placeholder"
+            />
           </div>
         </div>
       </div>
@@ -163,8 +179,11 @@
       <div class="container">
         <div class="row">
           <div class="col text">
-            <p>this is a template for a website</p>
-            <p>contact kevin martinez for work</p>
+            <p>
+              this is an example of using bootstrap to create a responsive
+              application
+            </p>
+            <p>made by kevin martinez</p>
           </div>
           <div class="col socials text-end">
             <ul>
@@ -210,6 +229,11 @@
     <script src="app.js"></script>
     <script
       src="https://kit.fontawesome.com/ea6fcb514e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
   </body>
